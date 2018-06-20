@@ -438,7 +438,7 @@ body {
 
 header {
     background-color: #FE92B2;
-    color: #fff;
+    color:#212121;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -538,15 +538,47 @@ header {
     background-color: #FE92B2;
     color: #000;
     padding: 10px;
+    transition: background-color 300ms ease-in-out;
 }
-
+.about-btn--last {
+    background-color: #fff;
+}
 .about-btn:focus,
 .about-btn:hover {
-    background-color: #A0F0F2;
+    background-color: rgb(144, 213, 214);
 }
 
 .about-btn--last:focus,
 .about-btn--last:hover {
-    background-color: #fff;
+    background-color: #FE92B2;
     color: #000;
+}
+
+.shoutout {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    padding-top: 60px;
+    color: #fff;
+    align-items: center;
+    text-align: justify;
+    background-color: #3f3f3f;
+    
+}
+
+
+
+blockquote {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2em;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 2em;
+}
+
+blockquote::after {
+    content: '"';
+    font-size: 2em;
 }

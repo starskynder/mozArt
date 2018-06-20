@@ -536,3 +536,11 @@ header {
 }
 
 .about-image {}
+
+.about-btn {
+    border-radius: 5px;
+    border: 0;
+    background-color: #FE92B2;
+    color: #000;
+    padding: 10px;
+}

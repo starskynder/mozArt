@@ -350,3 +350,44 @@
       max-width: 100%;
       height: auto;
   }
+  
+  /*--------Navigation ----------------*/
+.nav {
+    background-color: #fff;
+}
+  .navigation {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      padding: 10px;
+  }
+
+  .navigation-link {
+      padding: 5px;
+
+  }
+
+  .navigation-link a {
+      text-decoration: none;
+  }
+
+  .menu-hamburger {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: #FE92B2;
+      margin: 6px;
+  }
+
+  .nav-top {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 10px;
+      font-family: 'Homemade Apple', cursive;
+      font-size: 1.5em;
+  }
+  .nav-logo--title {
+      display: block;
+      text-align: center;
+  }

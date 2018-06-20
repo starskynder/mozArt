@@ -442,18 +442,13 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    height: 100vh;
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 0;
 }
 
 .header-title {
-    /*  text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    margin-bottom: 10px;
 }
 
 .header-cell {
@@ -543,4 +538,15 @@ header {
     background-color: #FE92B2;
     color: #000;
     padding: 10px;
+}
+
+.about-btn:focus,
+.about-btn:hover {
+    background-color: #A0F0F2;
+}
+
+.about-btn--last:focus,
+.about-btn--last:hover {
+    background-color: #fff;
+    color: #000;
 }

@@ -530,8 +530,6 @@ header {
     background-color: #A0F0F2;
 }
 
-.about-image {}
-
 .about-btn {
     border-radius: 5px;
     border: 0;
@@ -621,18 +619,17 @@ blockquote::after {
     flex-flow: column wrap;
     align-items: center;
     padding: 20px;
-     background-color: #FFCDDE;
+    background-color: #FFCDDE;
     text-align: justify;
 }
 
 .news-box {
-   
     padding: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-   border-bottom: 1px dotted #000;
+    border-bottom: 1px dotted #000;
 }
 
 .news-box--btn {
@@ -650,8 +647,13 @@ blockquote::after {
 }
 
 .news-box--img {
-   margin: 5px;
-   width: 150px;
-   border-radius: 50%;
+    margin: 5px;
+    width: 150px;
+    border-radius: 50%;
 }
 
+.news-box--title {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.5em;
+    text-align: left;
+}

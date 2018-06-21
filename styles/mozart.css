@@ -613,3 +613,45 @@ blockquote::after {
 .features-box--title {
     display: inline;
 }
+
+/*--------------News-----------------*/
+
+.news {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 20px;
+     background-color: #FFCDDE;
+    text-align: justify;
+}
+
+.news-box {
+   
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+   border-bottom: 1px dotted #000;
+}
+
+.news-box--btn {
+    border: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.news-box--btn:focus,
+.news-box--btn:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 3px 3px #FE92B2;
+}
+
+.news-box--img {
+   margin: 5px;
+   width: 150px;
+   border-radius: 50%;
+}
+

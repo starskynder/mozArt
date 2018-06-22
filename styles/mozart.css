@@ -732,3 +732,33 @@ blockquote::after {
     font-size: 2em;
     align-items: center;
 }
+
+.showcase-box--sub {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #fff;
+}
+
+.showcase-box--sub:first-of-type {
+    padding: 30px;
+}
+
+.social {
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #bb2653;
+    color: #fff;
+    padding:60px;
+    font-size: 3em;
+}
+
+.social-icon {
+    padding: 12px;
+    transition: all 0.2s linear;
+}
+.social-icon:focus,
+.social-icon:hover {
+   text-shadow: 0 6px 6px #831a3a;
+   transform: translate(-10px, -10px)
+}

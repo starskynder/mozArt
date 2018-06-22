@@ -657,3 +657,46 @@ blockquote::after {
     font-size: 1.5em;
     text-align: left;
 }
+
+/*------------Blog Post-------------*/
+.blog {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+   
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.blog-post--date,
+.blog-post--author {
+    display: block;
+    padding: 3px;
+    color: #FE92B2;
+}
+.blog-post {
+    padding: 5px;
+}
+.blog-post--btn {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.blog-post--btn:focus,
+.blog-post--btn:hover {
+    background-color: #FE92B2;
+    color: #000;
+    box-shadow: 0 3px 3px #fff;
+}
+.blog-post--title {
+    font-family: 'Homemade Apple', cursive;
+    align-self: center;
+    color: #FE92B2;
+}
+
+.blog-post--content {
+    padding: 10px 0;
+}

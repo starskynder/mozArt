@@ -632,6 +632,10 @@ blockquote::after {
     border-bottom: 1px dotted #000;
 }
 
+.news-box:last-of-type {
+    border: 0;
+}
+
 .news-box--btn {
     border: 0;
     background-color: #fff;

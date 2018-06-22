@@ -766,3 +766,20 @@ blockquote::after {
    text-shadow: 0 6px 6px #831a3a;
    transform: translate(-10px, -10px)
 }
+
+/*----Who is Mozart-------*/
+
+.whoismozart {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+    background-color: #3f3f3f;
+}
+
+.whoismozart-info {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}

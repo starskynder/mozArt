@@ -695,8 +695,13 @@ blockquote::after {
     font-family: 'Homemade Apple', cursive;
     align-self: center;
     color: #FE92B2;
+    letter-spacing: 3px;
 }
+.blog-post--title_sub::before,
+.blog-post--title_sub::after {
+    content: " ⚯ ";
 
+}
 .blog-post--content {
     padding: 10px 0;
 }

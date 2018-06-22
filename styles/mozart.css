@@ -711,3 +711,25 @@ blockquote::after {
 .blog-post--content {
     padding: 10px 0;
 }
+
+/*--------Showcase--------*/
+
+.showcase-box {
+   position: relative;
+   display: flex;
+   flex-flow: column wrap;
+   background-color: #00BBE0;
+
+   
+}
+
+.showcase-box--title {
+    position: absolute;
+   top: 30px;
+   
+   max-width: 50%;
+   padding: 15px;
+   color: #fff;
+   font-size: 2em;
+   align-items: center;
+}

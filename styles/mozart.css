@@ -637,6 +637,7 @@ blockquote::after {
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
+    transition: background-color 300ms ease-in-out;
 }
 
 .news-box--btn:focus,
@@ -659,15 +660,14 @@ blockquote::after {
 }
 
 /*------------Blog Post-------------*/
+
 .blog {
     background-color: #000;
     color: #fff;
     padding: 20px;
-   
     display: flex;
     flex-flow: column;
     align-items: center;
-
 }
 
 .blog-post--date,
@@ -676,32 +676,38 @@ blockquote::after {
     padding: 3px;
     color: #FE92B2;
 }
+
 .blog-post {
     padding: 5px;
 }
+
 .blog-post--btn {
     padding: 10px;
     border: 0;
     border-radius: 10px;
     background-color: #fff;
+    transition: background-color 300ms ease-in-out;
 }
+
 .blog-post--btn:focus,
 .blog-post--btn:hover {
     background-color: #FE92B2;
     color: #000;
     box-shadow: 0 3px 3px #fff;
 }
+
 .blog-post--title {
     font-family: 'Homemade Apple', cursive;
     align-self: center;
     color: #FE92B2;
     letter-spacing: 3px;
 }
+
 .blog-post--title_sub::before,
 .blog-post--title_sub::after {
     content: " ⚯ ";
-
 }
+
 .blog-post--content {
     padding: 10px 0;
 }

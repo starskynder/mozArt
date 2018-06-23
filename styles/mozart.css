@@ -757,7 +757,7 @@ blockquote::after {
     justify-content: center;
     background-color: #bb2653;
     color: #fff;
-    padding: 60px;
+    padding: 30px;
     font-size: 3em;
 }
 

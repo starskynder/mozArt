@@ -847,7 +847,9 @@ blockquote::after {
     align-self: flex-end;
     transition: all .9s ease 0s;
 }
-
+.team-box-job {
+    padding-bottom: 20px;
+}
 .team-box:hover .team-box-circle {
     opacity: 1;
 }

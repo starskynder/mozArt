@@ -389,9 +389,11 @@ html {
 body {
     font-family: 'Exo 2', sans-serif;
 }
+
 p {
     line-height: 1.4em;
 }
+
 /*--------Navigation ----------------*/
 
 .nav {
@@ -755,7 +757,7 @@ blockquote::after {
     justify-content: center;
     background-color: #bb2653;
     color: #fff;
-    padding:60px;
+    padding: 60px;
     font-size: 3em;
 }
 
@@ -763,10 +765,11 @@ blockquote::after {
     padding: 12px;
     transition: all 0.2s linear;
 }
+
 .social-icon:focus,
 .social-icon:hover {
-   text-shadow: 0 6px 6px #831a3a;
-   transform: translate(-10px, -10px)
+    text-shadow: 0 6px 6px #831a3a;
+    transform: translate(-10px, -10px)
 }
 
 /*----Who is Mozart-------*/
@@ -787,37 +790,38 @@ blockquote::after {
 }
 
 /*-----------Meet the Team------*/
+
 .team-box-circle {
-    background-color:#fabbce;
+    background-color: #fabbce;
     height: 260px;
     width: 260px;
     overflow: hidden;
-    border-radius: 30% ;
-position: absolute;
+    border-radius: 30%;
+    position: absolute;
     opacity: 0;
     transform: translate(0, -50%);
 }
+
 .team {
     background-color: #fabbce;
 }
+
 .team,
 .team-box {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-   position: relative;
-   
-   
+    position: relative;
 }
 
 .team-box {
-     border: 2px solid #fff;
-     /* border-radius: 5px; */
-     margin: 10px;
-     height: 350px;
-     width: 260px;
-     overflow: hidden;
-     background-color: #fff;
+    border: 2px solid #fff;
+    /* border-radius: 5px; */
+    margin: 10px;
+    height: 350px;
+    width: 260px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .team-box-image {
@@ -846,22 +850,22 @@ position: absolute;
 }
 
 .team-box:hover .team-box-circle {
-  opacity: 1;
+    opacity: 1;
 }
 
 .team-box:hover .team-box-social {
-   opacity: 1;
+    opacity: 1;
 }
 
-.team-box:hover .team-box-image{
- box-shadow: 0 0 0 8px #fff, 0 0 0 16px #fabbce;
-  transform: scale(0.7);
+.team-box:hover .team-box-image {
+    box-shadow: 0 0 0 8px #fff, 0 0 0 16px #fabbce;
+    transform: scale(0.7);
 }
 
 .team-box-social-icon {
     margin: 10px;
-
 }
+
 .team-box-social-icon:hover {
     color: #000;
 }
@@ -870,4 +874,42 @@ position: absolute;
     font-family: 'Homemade Apple', cursive;
     font-size: 2em;
     margin: 40px;
+}
+
+/*------------Contact-------------*/
+
+.contact,
+.contact-form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(144, 213, 214);
+}
+
+.contact-form {
+    padding: 10px;
+    border: 2px solid #fff;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+.contact-form--input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    border: 1px solid #568c8d;
+    font-weight: bold;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-image: linear-gradient(to left, #fff, #568c8d, #fff);
 }

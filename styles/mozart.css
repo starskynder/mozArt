@@ -793,8 +793,8 @@ blockquote::after {
 
 .team-box-circle {
     background-color: #fabbce;
-    height: 260px;
-    width: 260px;
+    height: 80%;
+    width: 100%;
     overflow: hidden;
     border-radius: 30%;
     position: absolute;
@@ -816,10 +816,10 @@ blockquote::after {
 
 .team-box {
     border: 2px solid #fff;
-    /* border-radius: 5px; */
     margin: 10px;
-    height: 350px;
-    width: 260px;
+    height: 70%;
+    width: 70%;
+    max-width: 320px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -829,10 +829,9 @@ blockquote::after {
     border-radius: 50%;
     display: block;
     z-index: 2;
-    margin-top: 20%;
+    margin-top: 15%;
     transform: scale(1);
     transition: all .9s ease 0s;
-    /* border: 2px solid #f75183; */
 }
 
 .team-box-social {

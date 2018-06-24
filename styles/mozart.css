@@ -848,9 +848,11 @@ blockquote::after {
     align-self: flex-end;
     transition: all .9s ease 0s;
 }
+
 .team-box-job {
     padding-bottom: 20px;
 }
+
 .team-box:hover .team-box-circle {
     opacity: 1;
 }
@@ -880,9 +882,8 @@ blockquote::after {
 
 /*------------Contact-------------*/
 
-.contact {
+.contact {}
 
-}
 .contact,
 .contact-form {
     display: flex;
@@ -898,7 +899,6 @@ blockquote::after {
     align-items: flex-start;
     border-radius: 5px;
     padding: 10px;
-
 }
 
 .contact-form--input {
@@ -914,9 +914,82 @@ input[type="submit"] {
     background-color: #fff;
     border: 1px solid #568c8d;
     font-weight: bold;
+    transition: all 0.4s linear;
 }
 
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-    background-image: linear-gradient(to left, #fff, #568c8d, #fff);
+    background-color: #fabbce;
+}
+
+/*----------------Footer----------------*/
+
+footer {
+    background-color: #0b5c5e;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.footer-social--icon {
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer,
+.footer-mailing,
+.footer-credits {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.footer-mailing,
+.footer-credits {
+    border: 1px solid #fff;
+    margin: 20px 0;
+    padding: 30px 20px;
+    border: 1px solid #fff;
+}
+
+.footer-credits {
+    justify-content: flex-start;
+}
+
+.footer-credits--content {
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-credits a {
+    color: #fff;
+    transition: all 0.4s linear;
+    padding: 0 4px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.footer-social--icon {
+    transition: all 0.4s ease-out;
+}
+
+.footer-credits a:focus,
+.footer-credits a:hover,
+.footer-social--icon:focus,
+.footer-social--icon:hover {
+    background-color: #fabbce;
+    color: #000;
+}
+
+.footer-mailing input {
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
 }

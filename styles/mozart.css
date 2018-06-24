@@ -514,7 +514,7 @@ header {
 /*----------------About---------------*/
 
 .about-box {
-    padding: 20px;
+    padding: 45px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;

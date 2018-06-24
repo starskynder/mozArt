@@ -778,7 +778,7 @@ blockquote::after {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 30px;
+    padding: 50px 30px;
     color: #fff;
     background-color: #3f3f3f;
 }

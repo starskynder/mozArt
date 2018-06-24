@@ -880,12 +880,15 @@ blockquote::after {
 
 /*------------Contact-------------*/
 
+.contact {
+
+}
 .contact,
 .contact-form {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 10px;
+    padding: 40px;
     background-color: rgb(144, 213, 214);
 }
 
@@ -894,6 +897,8 @@ blockquote::after {
     border: 2px solid #fff;
     align-items: flex-start;
     border-radius: 5px;
+    padding: 10px;
+
 }
 
 .contact-form--input {

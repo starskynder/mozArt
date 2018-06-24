@@ -804,6 +804,7 @@ blockquote::after {
 
 .team {
     background-color: #fabbce;
+    padding: 40px 0;
 }
 
 .team,

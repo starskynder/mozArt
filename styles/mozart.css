@@ -672,7 +672,7 @@ blockquote::after {
 .blog {
     background-color: #1b1b1b;
     color: #fff;
-    padding: 20px;
+    padding: 50px 20px;
     display: flex;
     flex-flow: column;
     align-items: center;

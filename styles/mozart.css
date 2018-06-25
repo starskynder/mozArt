@@ -405,14 +405,18 @@ p {
 .news-box,
 .blog,
 .showcase,
-.showcase-box-bottom,
-.showcase-box--sub,
+.showcase-blue,
+.showcase-pink,
+.showcase-quote,
+.showcase-hair,
 .whoismozart,
 .team,
 .team-box,
 .contact,
 .contact-form,
 footer,
+.footer,
+.footer-box,
 .footer-mailing,
 .footer-credits {
     display: flex;
@@ -428,7 +432,6 @@ footer,
 .news,
 .news-box,
 .blog,
-.showcase-box--sub,
 .whoismozart,
 .team,
 .team-box,
@@ -649,7 +652,7 @@ header {
     padding-top: 60px;
     color: #fff;
     text-align: justify;
-    background-color: #3f3f3f;
+    background-color: #383737;
 }
 
 blockquote {
@@ -796,16 +799,8 @@ blockquote::after {
 
 /*--------Showcase--------*/
 
-.showcase,
-.showcase-box-bottom {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.showcase-box-top {
+.showcase-blue {
     position: relative;
-    display: flex;
-    flex-flow: column wrap;
     background-color: #00BBE0;
     background-image: url(../images/blueheadphones3.png);
     background-position: center;
@@ -814,7 +809,15 @@ blockquote::after {
     height: 600px;
 }
 
-.showcase-box--title {
+.showcase-hair {
+    background-image: url(../images/pinkhead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.showcase-blue--title {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -826,15 +829,20 @@ blockquote::after {
     align-items: center;
 }
 
-.showcase-box--sub {
-    background-color: #fff;
+.showcase-quote {
+    padding: 5px;
 }
 
-.showcase-box--sub blockquote,
-.showcase-box--sub cite {
+.showcase-quote blockquote,
+.showcase-quote cite {
     text-align: center;
     margin: auto;
     padding: 5px;
+}
+
+.showcase-social {
+    display: flex;
+    justify-content: center;
 }
 
 .social {
@@ -958,20 +966,32 @@ blockquote::after {
     margin: 40px;
 }
 
-/*------------Contact-------------*/
+/*----------------Footer----------------*/
 
-.contact,
-.contact-form {
-    padding: 40px;
-    background-color: rgb(144, 213, 214);
+footer {
+    background-color: #0b5c5e;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.footer-box {
+    align-items: stretch;
+    flex: 1;
 }
 
 .contact-form {
-    padding: 10px;
-    border: 2px solid #fff;
     align-items: flex-start;
+    flex: 4;
+}
+
+.contact-form,
+.footer-social,
+.footer-mailing,
+.footer-credits {
     border-radius: 5px;
-    padding: 10px;
+    border: 2px solid #fff;
+    padding: 20px;
+    margin: 10px;
 }
 
 .contact-form--input {
@@ -995,48 +1015,28 @@ input[type="submit"]:hover {
     background-color: #fabbce;
 }
 
-/*----------------Footer----------------*/
-
-footer {
-    background-color: #0b5c5e;
-    color: #fff;
-    font-size: 1.1em;
+.footer-title {
+    width: 100%;
+    text-align: center;
 }
 
 .footer-social {
     display: flex;
+    flex: 1;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 20px 0;
+    /*  font-size: 2em; */
+    align-items: center;
+}
+
+.footer-mailing {
+    flex: 2;
 }
 
 .footer-social--icon {
     font-size: 2em;
     padding: 10px;
     border-radius: 5px;
-}
-
-footer,
-.footer-mailing,
-.footer-credits {
-    padding: 40px 20px;
-}
-
-.footer-mailing,
-.footer-credits {
-    border: 1px solid #fff;
-    margin: 20px 0;
-    padding: 30px 20px;
-    border: 1px solid #fff;
-}
-
-.footer-credits {
-    justify-content: flex-start;
-}
-
-.footer-credits--content {
-    display: block;
-    margin: 10px 0;
 }
 
 .footer-credits a {

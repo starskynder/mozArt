@@ -394,6 +394,57 @@ p {
     line-height: 1.4em;
 }
 
+.navigation,
+.about,
+.about-box,
+.shoutout,
+.features,
+.features-boxes,
+.feeds,
+.news,
+.news-box,
+.blog,
+.showcase,
+.showcase-box-bottom,
+.showcase-box--sub,
+.whoismozart,
+.team,
+.team-box,
+.contact,
+.contact-form,
+footer,
+.footer-mailing,
+.footer-credits {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navigation,
+.about,
+.about-box,
+.shoutout,
+.features-boxes,
+.feeds,
+.news,
+.news-box,
+.blog,
+.showcase-box--sub,
+.whoismozart,
+.team,
+.team-box,
+.contact,
+.contact-form {
+    align-items: center;
+}
+
+.nav-top,
+blockquote,
+.news-box--title,
+.blog-post--title,
+.team-title {
+    font-family: 'Homemade Apple', cursive;
+}
+
 /*--------Navigation ----------------*/
 
 .nav {
@@ -401,9 +452,6 @@ p {
 }
 
 .navigation {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     align-content: center;
     list-style-type: none;
     padding: 50px 0;
@@ -471,7 +519,6 @@ p {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 10px;
-    font-family: 'Homemade Apple', cursive;
     font-size: 1.5em;
 }
 
@@ -558,9 +605,6 @@ header {
 
 .about-box {
     padding: 45px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
 }
 
 .about-box:first-of-type {
@@ -602,18 +646,14 @@ header {
 }
 
 .shoutout {
-    display: flex;
-    flex-flow: column wrap;
     padding: 10px;
     padding-top: 60px;
     color: #fff;
-    align-items: center;
     text-align: justify;
     background-color: #3f3f3f;
 }
 
 blockquote {
-    font-family: 'Homemade Apple', cursive;
     font-size: 2em;
 }
 
@@ -629,9 +669,12 @@ blockquote::after {
 
 /*-------------Features----------------*/
 
-.features {
-    display: flex;
-    flex-flow: column wrap;
+.features-image--top {
+    background-image: url(../images/bluish.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
 }
 
 .features-box {
@@ -662,9 +705,6 @@ blockquote::after {
 /*--------------News-----------------*/
 
 .news {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     padding: 20px;
     background-color: #FFCDDE;
     text-align: justify;
@@ -673,9 +713,6 @@ blockquote::after {
 .news-box {
     padding: 20px;
     padding-bottom: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     border-bottom: 1px dotted #000;
 }
 
@@ -705,7 +742,6 @@ blockquote::after {
 }
 
 .news-box--title {
-    font-family: 'Homemade Apple', cursive;
     font-size: 1.5em;
     text-align: left;
 }
@@ -716,9 +752,6 @@ blockquote::after {
     background-color: #1b1b1b;
     color: #fff;
     padding: 50px 20px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
 }
 
 .blog-post--date,
@@ -748,7 +781,6 @@ blockquote::after {
 }
 
 .blog-post--title {
-    font-family: 'Homemade Apple', cursive;
     align-self: center;
     color: #FE92B2;
     letter-spacing: 3px;
@@ -765,11 +797,22 @@ blockquote::after {
 
 /*--------Showcase--------*/
 
-.showcase-box {
+.showcase,
+.showcase-box-bottom {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.showcase-box-top {
     position: relative;
     display: flex;
     flex-flow: column wrap;
     background-color: #00BBE0;
+    background-image: url(../images/blueheadphones3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }
 
 .showcase-box--title {
@@ -785,19 +828,20 @@ blockquote::after {
 }
 
 .showcase-box--sub {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     background-color: #fff;
 }
 
-.showcase-box--sub:first-of-type {
-    padding: 30px;
+.showcase-box--sub blockquote,
+.showcase-box--sub cite {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
 }
 
 .social {
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: stretch;
     background-color: #bb2653;
     color: #fff;
     padding: 30px;
@@ -818,9 +862,6 @@ blockquote::after {
 /*----Who is Mozart-------*/
 
 .whoismozart {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     padding: 50px 30px;
     color: #fff;
     background-color: #3f3f3f;
@@ -852,9 +893,6 @@ blockquote::after {
 
 .team,
 .team-box {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     position: relative;
 }
 
@@ -918,20 +956,14 @@ blockquote::after {
 }
 
 .team-title {
-    font-family: 'Homemade Apple', cursive;
     font-size: 2em;
     margin: 40px;
 }
 
 /*------------Contact-------------*/
 
-.contact {}
-
 .contact,
 .contact-form {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     padding: 40px;
     background-color: rgb(144, 213, 214);
 }
@@ -989,8 +1021,6 @@ footer {
 footer,
 .footer-mailing,
 .footer-credits {
-    display: flex;
-    flex-flow: column wrap;
     padding: 40px 20px;
 }
 

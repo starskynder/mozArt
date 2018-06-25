@@ -424,7 +424,7 @@ footer,
 .about-box,
 .shoutout,
 .features-boxes,
-.feeds,
+.social,
 .news,
 .news-box,
 .blog,
@@ -841,7 +841,6 @@ blockquote::after {
 .social {
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: stretch;
     background-color: #bb2653;
     color: #fff;
     padding: 30px;

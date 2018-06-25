@@ -1065,3 +1065,70 @@ input[type="submit"]:hover {
     padding: 5px;
     border: 0;
 }
+
+/*--------------Media Queries-------------*/
+
+@media (min-width: 700px) {
+    .features,
+    .about,
+    .features-boxes,
+    .feeds,
+    .showcase,
+    .team,
+    footer {
+        flex-flow: row wrap;
+    }
+    .about {
+        align-items: stretch;
+    }
+    .team-title {
+        width: 100%;
+        text-align: center;
+    }
+    .team,
+    footer {
+        justify-content: space-around;
+    }
+    .contact-form {
+        flex: 40%;
+    }
+    .footer-social {
+        font-size: 1.6em;
+    }
+    .footer-box,
+    .footer-credits {
+        flex: 30%;
+    }
+    .about-box,
+    .features-boxes,
+    .features-image--top,
+    .blog,
+    .news,
+    .whoismozart,
+    .showcase-hair,
+    .showcase-blue,
+    .showcase-pink,
+    .showcase-quote,
+    .showcase-social {
+        flex: 50%;
+        height: auto;
+    }
+    .showcase-blue {
+        height: 350px;
+    }
+  
+}
+
+@media (min-width: 1000px) {
+    .contact-form {
+        flex: 2;
+    }
+    .footer-box,
+    .footer-credits {
+        flex: 1;
+    }
+    .about-box {
+        flex: 30%;
+        align-content: stretch;
+    }
+}

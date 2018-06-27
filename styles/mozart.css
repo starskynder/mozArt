@@ -966,12 +966,13 @@ blockquote::after {
     margin: 40px;
 }
 
-/*----------------Footer----------------*/
+/*----------------Footer/Contact----------------*/
 
 footer {
     background-color: #0b5c5e;
     color: #fff;
     font-size: 1.1em;
+    padding: 20px;
 }
 
 .footer-box {

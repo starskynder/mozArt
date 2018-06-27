@@ -988,7 +988,7 @@ blockquote::after {
 /*----------------Footer/Contact----------------*/
 
 footer {
-    background-color: #0b5c5e;
+    background-color: #5AA3C0;
     color: #fff;
     font-size: 1.1em;
     padding: 20px;
@@ -1125,21 +1125,6 @@ input[type="submit"]:hover {
     .header-subtitle {
         font-size: 2em;
     }
-    /*  .header-cell {
-        border-top: 70px solid white;
-    border-left: 10px solid #fff;
-    border-right: 10px solid #fff;
-    border-bottom: 60px solid #fff;
-    }
-    .header-cell--dot {
-        width: 30px;
-        height: 30px;
-    }
-
-    .header-cell--line {
-        width: 40px;
-        height: 7px;
-    } */
     .features,
     .about,
     .features-boxes,

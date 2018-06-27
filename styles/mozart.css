@@ -899,7 +899,9 @@ blockquote::after {
     padding: 5px;
     text-align: center;
 }
-
+.whoismozart p {
+    max-width: 700px;
+}
 /*-----------Meet the Team------*/
 
 .team-box-circle {

@@ -394,6 +394,7 @@ p {
     line-height: 1.4em;
 }
 
+.header-content,
 .navigation,
 .about,
 .about-box,
@@ -545,26 +546,33 @@ header {
 }
 
 .header-title {
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 .header-cell {
-    width: 220px;
+    width: 260px;
     position: relative;
-    height: 350px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 490px;
+    border-radius: 10px;
     border-top: 50px solid white;
     border-left: 6px solid #fff;
     border-right: 6px solid #fff;
+    border-bottom: 40px solid #fff;
     background-image: url("../images/headphones-2x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-self: flex-end;
-    margin-left: auto;
-    margin-right: 20px;
-    box-shadow: -16px 0 16px #f75183;
+    transition: all 0.4s linear;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: -10px -10px 10px rgb(139, 59, 83);
+}
+
+header:focus .header-cell,
+header:hover .header-cell {
+    transform: translate(-10px, -10px);
+    box-shadow: -10px -10px 10px rgb(139, 59, 83);
 }
 
 .header-cell--dot {
@@ -602,6 +610,15 @@ header {
     color: #fff;
     padding: 10px;
     background-color: #3f3f3f;
+    transition: all 0.4s linear;
+}
+
+.header-btn:focus,
+.header-btn:hover {
+    background-color: #fff;
+    color: #3f3f3f;
+    transform: translate(10px, 10px);
+    box-shadow: -10px -10px 10px rgb(139, 59, 83);
 }
 
 /*----------------About---------------*/
@@ -781,7 +798,6 @@ blockquote::after {
 .blog-post--btn:hover {
     background-color: #FE92B2;
     color: #000;
-   
     border-radius: 0;
 }
 
@@ -1072,11 +1088,58 @@ input[type="submit"]:hover {
 
 /*--------------Media Queries-------------*/
 
+@media (min-width: 600px) {
+    .header-content {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    h1 {
+        width: 100%;
+    }
+    .header-title {
+        flex: 60%;
+        padding: 20px;
+        font-size: 1.3em;
+    }
+    .header-cell {
+        min-width: 300px;
+        height: 550px;
+        margin: auto;
+    }
+}
+
 @media (min-width: 700px) {
     body {
         margin: 20px;
         height: auto;
     }
+    header {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .header-subtitle {
+        font-size: 2em;
+    }
+    /*  .header-cell {
+        border-top: 70px solid white;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-bottom: 60px solid #fff;
+    }
+    .header-cell--dot {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-cell--line {
+        width: 40px;
+        height: 7px;
+    } */
     .features,
     .about,
     .features-boxes,
@@ -1124,7 +1187,6 @@ input[type="submit"]:hover {
     .showcase-blue {
         height: 350px;
     }
-  
 }
 
 @media (min-width: 1000px) {
@@ -1138,5 +1200,27 @@ input[type="submit"]:hover {
     .about-box {
         flex: 30%;
         align-content: stretch;
+    }
+    .header-title {
+        max-width: 50%;
+        text-align: justify;
+    }
+    .header-cell {
+        width: 400px;
+        height: 750px;
+        border-top: 70px solid white;
+        border-left: 10px solid #fff;
+        border-right: 10px solid #fff;
+        border-bottom: 60px solid #fff;
+    }
+    .header-cell--dot {
+        width: 30px;
+        height: 30px;
+        top: -40px;
+    }
+    .header-cell--line {
+        width: 40px;
+        height: 7px;
+        top: -30px;
     }
 }

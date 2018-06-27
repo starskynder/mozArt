@@ -1109,13 +1109,12 @@ input[type="submit"]:hover {
         height: 550px;
         margin: auto;
     }
+
+   
 }
 
 @media (min-width: 700px) {
-    body {
-        margin: 20px;
-        height: auto;
-    }
+ 
     header {
         padding: 50px;
     }
@@ -1207,5 +1206,22 @@ input[type="submit"]:hover {
         width: 40px;
         height: 7px;
         top: -30px;
+    }
+    .social {
+        font-size: 4em;
+    }
+} 
+@media (min-width: 1200px) {
+    .about-box,
+    .shoutout,
+    .features-box,
+    .team,
+    .whoismozart,
+    footer,
+    .news,
+    .blog {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        
     }
 }

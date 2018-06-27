@@ -734,6 +734,7 @@ blockquote::after {
     padding: 20px;
     padding-bottom: 20px;
     border-bottom: 1px dotted #000;
+    max-width: 700px;
 }
 
 .news-box:last-of-type {

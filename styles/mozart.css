@@ -1113,6 +1113,9 @@ input[type="submit"]:hover {
         height: 550px;
         margin: auto;
     }
+    .navigation {
+        font-size: 2em;
+    }
 
    
 }

@@ -1069,6 +1069,10 @@ input[type="submit"]:hover {
 /*--------------Media Queries-------------*/
 
 @media (min-width: 700px) {
+    body {
+        margin: 20px;
+        height: auto;
+    }
     .features,
     .about,
     .features-boxes,

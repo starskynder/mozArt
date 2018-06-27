@@ -783,6 +783,7 @@ blockquote::after {
 
 .blog-post {
     padding: 5px;
+    max-width: 700px;
 }
 
 .blog-post--btn {

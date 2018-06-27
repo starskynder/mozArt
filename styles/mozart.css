@@ -404,6 +404,7 @@ p {
 .news,
 .news-box,
 .blog,
+.blog-post,
 .showcase,
 .showcase-blue,
 .showcase-pink,
@@ -772,6 +773,7 @@ blockquote::after {
     border: 0;
     border-radius: 10px;
     background-color: #fff;
+    align-self: flex-end;
     transition: background-color 300ms ease-in-out;
 }
 
@@ -779,7 +781,8 @@ blockquote::after {
 .blog-post--btn:hover {
     background-color: #FE92B2;
     color: #000;
-    text-decoration: underline;
+   
+    border-radius: 0;
 }
 
 .blog-post--title {

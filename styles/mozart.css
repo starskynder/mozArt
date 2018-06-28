@@ -899,9 +899,11 @@ blockquote::after {
     padding: 5px;
     text-align: center;
 }
+
 .whoismozart p {
     max-width: 700px;
 }
+
 /*-----------Meet the Team------*/
 
 .team-box-circle {
@@ -1116,12 +1118,9 @@ input[type="submit"]:hover {
     .navigation {
         font-size: 2em;
     }
-
-   
 }
 
 @media (min-width: 700px) {
- 
     header {
         padding: 50px;
     }
@@ -1217,7 +1216,8 @@ input[type="submit"]:hover {
     .social {
         font-size: 4em;
     }
-} 
+}
+
 @media (min-width: 1200px) {
     .about-box,
     .shoutout,
@@ -1229,6 +1229,40 @@ input[type="submit"]:hover {
     .blog {
         padding-top: 90px;
         padding-bottom: 90px;
-        
+    }
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-top {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .navigation {
+        display: inline-block;
+        color: #000;
+        position: static;
+        width: auto;
+        background-color: #fff;
+        font-size: 1.5em;
+        height: auto;
+        margin-right: 30px;
+        align-self: flex-end;
+        padding: 20px;
+    }
+    .navigation-link a {
+        color: #000;
+        text-decoration: none;
+    }
+    .navigation-link a:focus,
+    .navigation-link a:hover {
+        text-decoration: underline;
+    }
+    .navigation-link {
+        display: inline-block;
     }
 }

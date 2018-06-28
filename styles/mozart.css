@@ -794,6 +794,7 @@ blockquote::after {
     background-color: #fff;
     align-self: flex-end;
     transition: background-color 300ms ease-in-out;
+    margin-right: 20px;
 }
 
 .blog-post--btn:focus,
